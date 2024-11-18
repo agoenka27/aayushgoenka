@@ -313,6 +313,7 @@ nav {
 
 
     h3, p, ul, a, h4 {
+        font-size: 0.9rem;
         text-align: left;
         word-wrap: break-word;
         hyphens: auto;
