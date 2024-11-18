@@ -72,6 +72,7 @@ h1 {
 h3, p, ul, a, h4 {
     margin-bottom: 1rem;
     text-align: justify;
+    list-style: none;
 }
 
 ul {
@@ -127,7 +128,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
-    padding: 0 var(--space-md)
+    padding: 0 var(--space-lg)
 
 }
 
@@ -194,7 +195,7 @@ nav {
     flex: 1;
     background-color: var(--color-white);      
     border-radius: 0 8px 8px 0;
-    padding: 0 var(--space-md);
+    padding: 0 var(--space-lg);
           
 }
 
@@ -244,21 +245,8 @@ nav {
 }
 
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;    
-    }
+@media (max-width: 1024px) {
 
-    .leftnav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-    }
-
-    .rightnav, .leftnav>.title {
-       display: none;
-    }
 
     main {
         flex-direction: column;    
@@ -269,8 +257,8 @@ nav {
         left: 0;
         margin: var(--space-lg) auto;
         min-height: auto;
-        min-width: 300px;
-        max-width: 300px;
+        min-width: 400px;
+        max-width: 400px;
         flex-direction: column;
         box-shadow: var(--shadow-md-all);
         background-color: var(--color-bg-light);
@@ -298,6 +286,27 @@ nav {
         margin: var(--space-lg) auto;
     }
 
+}
 
 
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;    
+    }
+
+    .leftnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .rightnav, .leftnav>.title {
+       display: none;
+    }
+
+    .centerbox {
+        min-width: 300px;
+        max-width: 300px;
+    }
 }
